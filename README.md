@@ -52,28 +52,43 @@ People often struggle to estimate the right time to book bus tickets. Our system
 ---
 
 ## ✅ Evaluation
-*Coming soon...*
+Evaluation results include MAE, RMSE, and R² to verify model performance.
 
 ---
 
 ## 🌐 Postman API Demo
-
-Tested the deployed API using **Postman**:
-
-- POST requests with bus features
-- Returns predicted price
+Used **Postman** to test the deployed API:
+- Send `POST` requests with bus features
+- Receive the **predicted price** in the response
 
 ---
 
-## 📦 Requirements
+## 📡 API Usage (with Postman)
 
-Create a `requirements.txt` file with the following:
+**Endpoint:**  
+POST /predict
 
-```txt
-pandas
-numpy
-xgboost
-scikit-learn
-flask
-selenium
-beautifulsoup4
+cpp
+Copy
+Edit
+
+**Request Body (JSON):**
+```json
+{
+  "bus_type": "AC",
+  "seat_type": "Sleeper",
+  "departure_time": "22:00",
+  "duration": "9:30",
+  "rating": 4.2,
+  "available_seats": 12,
+  "is_weekend": true,
+  "days_until_travel": 3
+}
+Response (JSON):
+
+json
+Copy
+Edit
+{
+  "predicted_price": 1250.75
+}
