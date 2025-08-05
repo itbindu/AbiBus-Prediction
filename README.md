@@ -47,12 +47,12 @@ People often struggle to estimate the right time to book bus tickets. Our system
 ## 🤖 Model
 
 - **Algorithm**: Decision Forest Regression
-- **Metrics**: MAE, RMSE, R² Score
+
 
 ---
 
 ## ✅ Evaluation
-Evaluation results include MAE, RMSE, and R² to verify model performance.
+Evaluation results include MAE, RMSE, and R² to verify model performance
 
 ---
 
@@ -74,14 +74,15 @@ POST /predict
 ```json
 {
   "bus_type": "AC",
-  "seat_type": "Sleeper",
-  "departure_time": "22:00",
-  "duration": "9:30",
-  "rating": 4.2,
-  "available_seats": 12,
-  "is_weekend": true,
-  "days_until_travel": 3
+  "seat_type": "Seater",
+  "price": 550,
+  "rating": 4.8,
+  "is_weekday": true,
+  "is_weekend": false,
+  "is_holiday": false,
+  "days_until_booking": 1
 }
+
 ```
 
 
@@ -89,7 +90,7 @@ POST /predict
 ```json
 
 {
-  "predicted_price": 1250.75
+  "predicted_price": 502.75
 }
 
 
