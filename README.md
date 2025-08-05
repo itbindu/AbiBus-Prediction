@@ -82,7 +82,35 @@ POST /predict
   "is_weekend": true,
   "days_until_travel": 3
 }
-**Response (JSON):**
+Response (JSON):
+
+json
+Copy
+Edit
+{
+  "predicted_price": 1250.75
+}
+yaml
+Copy
+Edit
+
+---
+
+### 🖼️ Resulting Markdown Output on GitHub will look like:
+
+**Request Body (JSON):**
+```json
+{
+  "bus_type": "AC",
+  "seat_type": "Sleeper",
+  "departure_time": "22:00",
+  "duration": "9:30",
+  "rating": 4.2,
+  "available_seats": 12,
+  "is_weekend": true,
+  "days_until_travel": 3
+}
+Response (JSON):
 
 json
 Copy
