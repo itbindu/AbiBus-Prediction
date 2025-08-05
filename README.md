@@ -71,7 +71,7 @@ POST /predict
 
 
 **Request Body (JSON):**
-
+```json
 {
   "bus_type": "AC",
   "seat_type": "Sleeper",
@@ -82,9 +82,11 @@ POST /predict
   "is_weekend": true,
   "days_until_travel": 3
 }
-```json
-Response (JSON):
+```
 
+
+**Response (JSON):**
+```json
 
 {
   "predicted_price": 1250.75
