@@ -33,7 +33,7 @@ People often struggle to estimate the right time to book bus tickets. Our system
 - ✅ Model Training
 - ✅ Evaluation
 - ✅ Prediction API with Postman
-![Pipeline](images/pipeline.jpg)
+![Pipeline](https://github.com/itbindu/AbiBus-Prediction/blob/main/Images/Pipe_line.jpg)
 ---
 
 ## 🧪 Feature Engineering
