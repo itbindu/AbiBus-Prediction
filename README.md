@@ -68,9 +68,7 @@ Used **Postman** to test the deployed API:
 **Endpoint:**  
 POST /predict
 
-cpp
-Copy
-Edit
+
 
 **Request Body (JSON):**
 ```json
@@ -84,7 +82,7 @@ Edit
   "is_weekend": true,
   "days_until_travel": 3
 }
-Response (JSON):
+**Response (JSON):**
 
 json
 Copy
