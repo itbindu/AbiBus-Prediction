@@ -40,7 +40,7 @@ People often struggle to estimate the right time to book bus tickets. Our system
 
 - Converted date & time to numerical format
 - Label encoded bus types
-- Created new features: day difference, holiday flag, etc.
+- Created new features: day difference, holiday flag.
 
 ---
 
